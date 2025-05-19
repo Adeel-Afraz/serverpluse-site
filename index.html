@@ -4,7 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ServerPlus - Minecraft Hosting</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    /* Base Styles */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+    }
+    header {
+      background: #2c2c2c;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #00ff99;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: #00ff99;
+    }
+    .plans {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .plan {
+      background: #2e2e2e;
+      border-radius: 8px;
+      width: 250px;
+      padding: 1rem;
+      text-align: center;
+      border: 2px solid #00ff99;
+    }
+    .plan img {
+      width: 64px;
+      height: 64px;
+    }
+    .plan h3 {
+      margin-top: 0.5rem;
+      color: #00ff99;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+    .plan li {
+      padding: 0.3rem 0;
+    }
+    .plan button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #00ff99;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .contact {
+      background: #2e2e2e;
+      padding: 2rem;
+      text-align: center;
+    }
+    .contact h2 {
+      color: #00ff99;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    .contact a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+    .faq {
+      background: #1e1e1e;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq h2 {
+      text-align: center;
+      color: #00ff99;
+    }
+    details {
+      background: #2e2e2e;
+      margin: 1rem 0;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      background: #2c2c2c;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+      .plan {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -13,6 +139,7 @@
       <a href="#">Home</a>
       <a href="#plans">Plans</a>
       <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
     </nav>
   </header>
 
@@ -22,7 +149,6 @@
   </section>
 
   <section class="plans" id="plans">
-    <!-- Plan Cards -->
     <div class="plan">
       <img src="assets/zombie.png" alt="Free Plan">
       <h3>Free</h3>
@@ -76,7 +202,41 @@
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/serverpluse_ig" target="_blank">@serverpluse_ig</a></p>
-    <p>Discord: <a href="https://discord.gg/YOUR_INVITE_CODE" target="_blank">Join our Discord</a></p>
+    <p>Discord: <a href="https://discord.com/users/serverpluse_dc" target="_blank">@serverpluse_dc</a></p>
+
+    <form action="https://api.web3forms.com/submit" method="POST" style="margin-top: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      <div style="margin-bottom: 1rem;">
+        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;">
+      </div>
+      <div style="margin-bottom: 1rem;">
+        <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;"></textarea>
+      </div>
+      <button type="submit" style="padding: 0.5rem 1rem; border: none; background: #00ff99; color: #000; font-weight: bold; cursor: pointer; border-radius: 5px;">Send Message</button>
+    </form>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <details>
+      <summary>What is ServerPlus?</summary>
+      <p>ServerPlus is a Minecraft hosting service offering various plans to suit different player needs.</p>
+    </details>
+    <details>
+      <summary>Do you support cracked Minecraft clients?</summary>
+      <p>Yes, all our plans support cracked clients.</p>
+    </details>
+    <details>
+      <summary>Can I upgrade my plan later?</summary>
+      <p>Absolutely! You can upgrade your plan at any time to enjoy more features and resources.</p>
+    </details>
+    <details>
+      <summary>How do I contact support?</summary>
+      <p>You can reach out to us via email, Instagram, or Discord as listed in the Contact section above.</p>
+    </details>
   </section>
 
   <footer>
