@@ -1,201 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ServerPluse - Fast & Secure Hosting</title>
-  <meta name="description" content="Get ultra-fast and secure hosting with ServerPluse. Launch offer - Up to 50% off on premium plans!">
-  <meta name="keywords" content="Hosting, ServerPluse, Web Hosting, Secure Hosting, Fast Servers">
-  <meta name="author" content="ServerPluse">
-  <link rel="icon" href="assets/images/logo.png" type="image/png">
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    :root {
-      --bg-dark: #0d1b16;
-      --primary: #1db954;
-      --highlight: #00e676;
-      --text: #f0f0f0;
-      --card-bg: #1a2b24;
-    }
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: var(--bg-dark);
-      color: var(--text);
-    }
+.feature-box {
+  background-color: #1a1f1c;
+  border: 1px solid #2b3a2e;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
 
-    header {
-      background-color: var(--card-bg);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 10px 20px;
-    }
+.feature-box:hover {
+  transform: translateY(-5px);
+}
 
-    .logo {
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    nav a {
-      color: var(--text);
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--highlight);
-    }
-
-    .promo-section {
-      background-color: var(--card-bg);
-      margin: 30px;
-      padding: 30px;
-      text-align: center;
-      border-radius: 10px;
-    }
-
-    .promo-section h2 {
-      margin-bottom: 10px;
-    }
-
-    .promo-section p {
-      margin-bottom: 20px;
-    }
-
-    .promo-section a {
-      display: inline-block;
-      padding: 12px 25px;
-      background-color: var(--highlight);
-      color: #0d1b16;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      border-radius: 4px;
-      animation: pulse 2.5s infinite;
-      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
-    }
-
-    .promo-section a:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);
-    }
-
-    @keyframes pulse {
-      0%, 100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 rgba(0, 230, 118, 0.4);
-      }
-      50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);
-      }
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-around;
-      margin: 40px 20px;
-      gap: 20px;
-    }
-
-    .feature {
-      background-color: var(--card-bg);
-      padding: 20px;
-      border-radius: 10px;
-      width: 30%;
-      text-align: center;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .feature:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
-    }
-
-    .adsense {
-      background-color: var(--card-bg);
-      margin: 30px 20px;
-      padding: 30px;
-      text-align: center;
-      border-radius: 10px;
-    }
-
-    .adsense p {
-      font-style: italic;
-      color: #ccc;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #888;
-    }
-
-  </style>
-</head>
-<body>
-  <header>
-    <div class="logo" onclick="window.location.href='index.html'">
-      <img src="assets/images/logo.png" alt="Server Logo">
-      <span><strong>ServerPluse</strong></span>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="plans.html">Plans</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="promo-section">
-    <h2>🚀 Launch Offer!</h2>
-    <p>Get up to <strong>50% off</strong> on Ultra and Premium Plans</p>
-    <a href="plans.html">Let's Go</a>
-  </section>
-
-  <section class="features">
-    <div class="feature">
-      <img src="assets/images/fast.png" alt="Fast Servers">
-      <p>Experience blazing-fast website speeds with our cutting-edge infrastructure.</p>
-    </div>
-    <div class="feature">
-      <img src="assets/images/secure.png" alt="Secure">
-      <p>Your data is safe with us. Military-grade encryption and backups included.</p>
-    </div>
-    <div class="feature">
-     <img src="assets/images/support.png" alt="support">
-      <p>Round-the-clock support to resolve your issues instantly.</p>
-    </div>
-  </section>
-
-  <section class="adsense">
-    <!-- Replace with actual AdSense code when ready -->
-    <p>Ad space for monetization - AdSense code will go here.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 ServerPluse. All rights reserved.
-  </footer>
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HKMRVD5L1E');
-  </script>
-</body>
-</html>
+.feature-img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
