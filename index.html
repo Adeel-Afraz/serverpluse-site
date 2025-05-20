@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ServerPluse - Fast Minecraft Hosting</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ServerPluse - Fast, Secure, and Affordable Hosting Plans"/>
+  <meta name="keywords" content="hosting, web hosting, secure servers, fast hosting, ServerPluse"/>
+  <meta name="author" content="ServerPluse"/>
+  <title>ServerPluse - Home</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="assets/favicon.png" />
-  <meta name="description" content="Host your Minecraft server with blazing speed, full support and secure setup using ServerPluse." />
-  <meta name="keywords" content="Minecraft Hosting, Fast Servers, ServerPluse, Secure Hosting" />
-  <meta name="author" content="ServerPluse" />
+  <link rel="icon" href="favicon.png" type="image/png" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -16,55 +16,132 @@
     gtag('js', new Date());
     gtag('config', 'G-HKMRVD5L1E');
   </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-9272409427495893" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!-- Header & Navigation -->
   <header>
-    <h1>ServerPluse</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="plans.html">Plans</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="nav-container">
+      <a href="index.html">
+        <img src="logo.png" alt="ServerPluse Logo" class="site-logo">
+      </a>
+      <h1 class="site-title">ServerPluse</h1>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="plans.html">Plans</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero Section -->
   <section class="hero">
-    <h2>Blazing Fast Minecraft Server Hosting</h2>
-    <p>Start your journey today with top-notch support and unbeatable performance!</p>
-    <img src="assets/banner.jpg" alt="Minecraft Hosting Banner" class="hero-banner">
+    <h2>Welcome to ServerPluse</h2>
+    <p>Fast, Secure, and Affordable Hosting Solutions</p>
+    <img src="banner.jpg" alt="Hero Banner" class="hero-banner">
   </section>
 
+  <!-- Features -->
   <section class="features">
     <div class="feature-box">
-      <img src="assets/images/fast.png" alt="Fast Server">
+      <img src="fast.png" alt="Fast Servers">
       <h3>Fast Servers</h3>
-      <p>Experience low-latency, high-performance servers optimized for Minecraft gameplay.</p>
+      <p>Experience ultra-low latency and blazing-fast load speeds with our global network.</p>
     </div>
     <div class="feature-box">
-      <img src="assets/images/support.png" alt="24/7 Support">
-      <h3>24/7 Support</h3>
-      <p>Our team is here to help any time with issues, setup, or questions.</p>
-    </div>
-    <div class="feature-box">
-      <img src="assets/images/secure.png" alt="Secure Hosting">
+      <img src="secure.png" alt="Secure Hosting">
       <h3>Secure Hosting</h3>
-      <p>DDOS protection, safe backups, and monitored services to keep your world safe.</p>
+      <p>Top-notch encryption and daily backups to protect your data 24/7.</p>
+    </div>
+    <div class="feature-box">
+      <img src="support.png" alt="Support">
+      <h3>24/7 Support</h3>
+      <p>Our expert team is here day and night to help with any issues you face.</p>
     </div>
   </section>
 
+  <!-- Plans -->
+  <section class="plans">
+    <div class="plan">
+      <img src="plan1.png" alt="Basic Plan">
+      <h3>Basic Plan</h3>
+      <p><del>₹199/month</del> ₹99/month</p>
+      <ul>
+        <li>1 Website</li>
+        <li>10 GB Storage</li>
+        <li>Unlimited Bandwidth</li>
+        <li>Email Support</li>
+      </ul>
+      <button>Start Plan</button>
+    </div>
+
+    <div class="plan">
+      <img src="plan2.png" alt="Pro Plan">
+      <h3>Pro Plan</h3>
+      <p><del>₹399/month</del> ₹249/month</p>
+      <ul>
+        <li>10 Websites</li>
+        <li>100 GB Storage</li>
+        <li>Free SSL</li>
+        <li>Priority Support</li>
+      </ul>
+      <button>Start Plan</button>
+    </div>
+
+    <div class="plan">
+      <img src="plan3.png" alt="Business Plan">
+      <h3>Business Plan</h3>
+      <p><del>₹999/month</del> ₹499/month</p>
+      <ul>
+        <li>Unlimited Websites</li>
+        <li>500 GB Storage</li>
+        <li>Free Domain</li>
+        <li>Dedicated Manager</li>
+      </ul>
+      <button>Start Plan</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="formMsg" style="text-align:center;"></p>
+  </section>
+
+  <!-- Ads Placeholder -->
   <section class="ads">
+    <!-- Your AdSense ad will appear here -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-9272409427495893"
+     crossorigin="anonymous"></script>
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-9272409427495893"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+      style="display:block"
+      data-ad-client="pub-9272409427495893"
+      data-ad-slot="1234567890"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 ServerPluse. All rights reserved.</p>
   </footer>
+
+  <!-- JS -->
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formMsg').textContent = "Thank you for your message!";
+      contactForm.reset();
+    });
+  </script>
 </body>
 </html>
