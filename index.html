@@ -1,36 +1,175 @@
-<!-- Why Choose Us Section -->
-<section style="padding: 60px 30px; background-color: #f9f9f9;">
-  <h2 style="text-align: center; font-size: 28px; margin-bottom: 40px; color: #333;">Why Choose Us</h2>
-  <div style="display: flex; justify-content: space-around; flex-wrap: wrap; max-width: 1000px; margin: 0 auto; gap: 30px;">
-    <div style="flex: 1; min-width: 250px; text-align: center;">
-      <img src="fast-server.png" alt="Fast Servers" style="width: 80px; height: 80px; margin-bottom: 20px;">
-      <h3>Blazing Fast Servers</h3>
-      <p>Experience unmatched speed with our ultra-optimized hosting infrastructure designed for performance.</p>
-    </div>
-    <div style="flex: 1; min-width: 250px; text-align: center;">
-      <img src="secure.png" alt="Secure Hosting" style="width: 80px; height: 80px; margin-bottom: 20px;">
-      <h3>Rock Solid Security</h3>
-      <p>Enterprise-level protection ensures your data is always safe and secure from threats and attacks.</p>
-    </div>
-    <div style="flex: 1; min-width: 250px; text-align: center;">
-      <img src="support.png" alt="24/7 Support" style="width: 80px; height: 80px; margin-bottom: 20px;">
-      <h3>24/7 Expert Support</h3>
-      <p>Our support team is always ready to assist you any time of the day with technical help or advice.</p>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ServerPluse – Fast & Secure Hosting</title>
+  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #111;
+      color: #fff;
+      padding: 10px 30px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+    .logo-container img {
+      height: 40px;
+      cursor: pointer;
+    }
+    .logo-container h1 {
+      margin-left: 10px;
+      font-size: 22px;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #f90;
+    }
+    .promo-section {
+      background-color: #f5f5f5;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .promo-section h2 {
+      font-size: 32px;
+      color: #333;
+    }
+    .promo-section p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .promo-section a {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #ff6600;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 4px;
+    }
+    .promo-section a:hover {
+      background-color: #e65c00;
+    }
+    .section {
+      padding: 60px 30px;
+    }
+    .section h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .features, .testimonials {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .feature, .testimonial {
+      background-color: #f2f2f2;
+      padding: 30px;
+      border-radius: 8px;
+      text-align: center;
+      flex: 1;
+      min-width: 280px;
+    }
+    .feature img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
 
-<!-- Testimonials Section -->
-<section style="padding: 60px 30px; background-color: #ffffff;">
-  <h2 style="text-align: center; font-size: 28px; margin-bottom: 40px; color: #333;">What Our Clients Say</h2>
-  <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 40px; max-width: 1000px; margin: 0 auto;">
-    <div style="background-color: #f2f2f2; padding: 30px; border-radius: 8px; max-width: 400px; text-align: center;">
-      <p style="font-style: italic;">"ServerPluse has completely transformed my website's speed and reliability. The best hosting I've used!"</p>
-      <strong>- Alex, Web Developer</strong>
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="assets/images/logo.png" alt="ServerPluse Logo" />
+      </a>
+      <h1>ServerPluse</h1>
     </div>
-    <div style="background-color: #f2f2f2; padding: 30px; border-radius: 8px; max-width: 400px; text-align: center;">
-      <p style="font-style: italic;">"Amazing support! They helped me migrate everything smoothly. Totally recommend their premium plan."</p>
-      <strong>- Priya, Blogger</strong>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="plans.html">Plans</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Promo Section -->
+  <section class="promo-section">
+    <h2>🎉 Launch Offer!</h2>
+    <p>Get up to <strong>50% OFF</strong> on Ultra and Premium Hosting Plans!</p>
+    <a href="plans.html">Let's Go</a>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section">
+    <h2>Why Choose Us</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="assets/images/fast-server.png" alt="Fast Servers" />
+        <h3>Blazing Fast Servers</h3>
+        <p>Experience unmatched speed with our ultra-optimized hosting infrastructure designed for performance.</p>
+      </div>
+      <div class="feature">
+        <img src="assets/images/secure.png" alt="Secure Hosting" />
+        <h3>Rock Solid Security</h3>
+        <p>Enterprise-level protection ensures your data is always safe and secure from threats and attacks.</p>
+      </div>
+      <div class="feature">
+        <img src="assets/images/support.png" alt="24/7 Support" />
+        <h3>24/7 Expert Support</h3>
+        <p>Our support team is always ready to assist you any time of the day with technical help or advice.</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials">
+      <div class="testimonial">
+        <p><em>"ServerPluse has completely transformed my website's speed and reliability. The best hosting I've used!"</em></p>
+        <strong>- Alex, Web Developer</strong>
+      </div>
+      <div class="testimonial">
+        <p><em>"Amazing support! They helped me migrate everything smoothly. Totally recommend their premium plan."</em></p>
+        <strong>- Priya, Blogger</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ServerPluse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
