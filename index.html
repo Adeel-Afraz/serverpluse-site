@@ -3,10 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ServerPlus offers affordable and reliable Minecraft server hosting plans." />
+  <meta name="keywords" content="Minecraft hosting, free Minecraft server, premium game servers" />
+  <meta name="author" content="ServerPlus" />
+  <meta property="og:title" content="ServerPlus - Minecraft Hosting" />
+  <meta property="og:description" content="Get your Minecraft server online with ServerPlus in seconds." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://adeel-afraz.github.io/serverpluse-site/" />
+  <meta name="theme-color" content="#00ff99" />
+  <link rel="icon" href="assets/favicon.ico" />
   <title>ServerPlus - Minecraft Hosting</title>
-  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
+
   <style>
-    /* Base Styles */
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,8 +74,13 @@
       height: 64px;
     }
     .plan h3 {
-      margin-top: 0.5rem;
+      margin: 0.5rem 0;
       color: #00ff99;
+    }
+    .price-line {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 0.9rem;
     }
     .plan ul {
       list-style: none;
@@ -77,40 +99,52 @@
       cursor: pointer;
       border-radius: 5px;
     }
+    .ads {
+      background: #2e2e2e;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .ads img {
+      width: 90%;
+      max-width: 728px;
+    }
     .contact {
       background: #2e2e2e;
       padding: 2rem;
       text-align: center;
     }
-    .contact h2 {
-      color: #00ff99;
-    }
-    .contact p {
-      margin: 0.5rem 0;
-    }
-    .contact a {
-      color: #00ff99;
-      text-decoration: none;
-    }
-    .faq {
-      background: #1e1e1e;
-      padding: 2rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .faq h2 {
-      text-align: center;
-      color: #00ff99;
-    }
-    details {
-      background: #2e2e2e;
-      margin: 1rem 0;
-      padding: 1rem;
+    .contact input,
+    .contact textarea {
+      width: 80%;
+      max-width: 400px;
+      margin: 0.5rem auto;
+      padding: 0.5rem;
+      border: none;
       border-radius: 5px;
     }
-    summary {
+    .contact button {
+      background: #00ff99;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
       cursor: pointer;
-      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .faq {
+      background: #1c1c1c;
+      padding: 2rem;
+    }
+    .faq h2 {
+      color: #00ff99;
+      text-align: center;
+    }
+    .faq details {
+      margin: 1rem 0;
+      background: #2e2e2e;
+      padding: 1rem;
+      border-radius: 5px;
     }
     footer {
       background: #2c2c2c;
@@ -119,15 +153,10 @@
       margin-top: 2rem;
       color: #aaa;
     }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       .plans {
         flex-direction: column;
         align-items: center;
-      }
-      .plan {
-        width: 90%;
       }
     }
   </style>
@@ -139,7 +168,6 @@
       <a href="#">Home</a>
       <a href="#plans">Plans</a>
       <a href="#contact">Contact</a>
-      <a href="#faq">FAQ</a>
     </nav>
   </header>
 
@@ -163,7 +191,7 @@
 
     <div class="plan">
       <img src="assets/skeleton.png" alt="Basic Plan">
-      <h3>Basic - ₹99</h3>
+      <h3>Basic <span class="price-line">₹199</span> ₹99</h3>
       <ul>
         <li>50 Players</li>
         <li>10 Plugins/Mods</li>
@@ -175,7 +203,7 @@
 
     <div class="plan">
       <img src="assets/blaze.png" alt="Ultra Plan">
-      <h3>Ultra - ₹199</h3>
+      <h3>Ultra <span class="price-line">₹299</span> ₹199</h3>
       <ul>
         <li>100 Players</li>
         <li>20 Plugins/Mods</li>
@@ -187,7 +215,7 @@
 
     <div class="plan">
       <img src="assets/wither.png" alt="Premium Plan">
-      <h3>Premium - ₹499</h3>
+      <h3>Premium <span class="price-line">₹799</span> ₹499</h3>
       <ul>
         <li>Unlimited Players</li>
         <li>Unlimited Plugins/Mods</li>
@@ -198,72 +226,51 @@
     </div>
   </section>
 
+  <section class="ads">
+    <h2>Advertisement</h2>
+    <img src="assets/ad-banner.png" alt="Ad Banner" />
+  </section>
+
+  <section class="faq">
+    <h2>FAQs</h2>
+    <details>
+      <summary>Is the Free plan really free?</summary>
+      <p>Yes! No hidden charges.</p>
+    </details>
+    <details>
+      <summary>Can I upgrade later?</summary>
+      <p>Absolutely. Upgrade anytime from your dashboard.</p>
+    </details>
+    <details>
+      <summary>Do you support cracked Minecraft?</summary>
+      <p>Yes, all our plans support cracked Minecraft.</p>
+    </details>
+  </section>
+
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
     <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/serverpluse" target="_blank">@serverpluse_ig</a></p>
+    <p>Instagram: <a href="https://instagram.com/serverpluse_ig" target="_blank">@serverpluse_ig</a></p>
     <p>Discord: <a href="https://discord.com/users/serverpluse_dc" target="_blank">@serverpluse_dc</a></p>
 
-    <form action="https://api.web3forms.com/submit" method="POST" style="margin-top: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
-      <input type="hidden" name="access_key" value="07ff5e95-1e47-4191-bd8a-0e25b191af7d">
-      <div style="margin-bottom: 1rem;">
-        <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;">
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;">
-      </div>
-      <div style="margin-bottom: 1rem;">
-        <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 0.5rem; border-radius: 5px; border: none;"></textarea>
-      </div>
-      <button type="submit" style="padding: 0.5rem 1rem; border: none; background: #00ff99; color: #000; font-weight: bold; cursor: pointer; border-radius: 5px;">Send Message</button>
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
     </form>
-  </section>
-
-  <section class="faq" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-      <summary>What is ServerPlus?</summary>
-      <p>ServerPlus is a Minecraft hosting service offering various plans to suit different player needs.</p>
-    </details>
-    <details>
-      <summary>Do you support cracked Minecraft clients?</summary>
-      <p>Yes, all our plans support cracked clients.</p>
-    </details>
-    <details>
-      <summary>Can I upgrade my plan later?</summary>
-      <p>Absolutely! You can upgrade your plan at any time to enjoy more features and resources.</p>
-    </details>
-    <details>
-      <summary>How do I contact support?</summary>
-      <p>You can reach out to us via email, Instagram, or Discord as listed in the Contact section above.</p>
-    </details>
   </section>
 
   <footer>
     &copy; 2025 ServerPlus. All rights reserved.
   </footer>
+
   <script>
-  document.querySelector("form").addEventListener("submit", async function (e) {
-    e.preventDefault();
-    const form = e.target;
-    const formData = new FormData(form);
-
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: formData,
-      headers: {
-        Accept: "application/json"
-      }
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent! We will contact you soon.');
+      this.reset(); // Clear form
     });
-
-    if (response.ok) {
-      alert("Message sent successfully!");
-      form.reset(); // Clears the form fields
-    } else {
-      alert("Something went wrong. Please try again.");
-    }
-  });
-</script>
-
+  </script>
 </body>
 </html>
