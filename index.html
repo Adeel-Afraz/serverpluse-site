@@ -6,7 +6,7 @@
   <meta name="description" content="ServerPlus - Best Minecraft Server Hosting at Affordable Prices." />
   <meta name="keywords" content="Minecraft, Server Hosting, Affordable Hosting, ServerPlus" />
   <meta name="author" content="ServerPlus Team" />
-  <title>ServerPlus - Minecraft Hosting</title>
+  <title>ServerPlus - Home</title>
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
 
   <!-- Google Analytics -->
@@ -42,122 +42,11 @@
       font-weight: bold;
     }
     nav a:hover { color: #00ff99; }
-
     .hero {
       text-align: center;
       padding: 3rem 1rem;
     }
     .hero h2 { font-size: 2.5rem; color: #00ff99; }
-    .plans {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem;
-      padding: 2rem;
-    }
-    .plan {
-      background: #2e2e2e;
-      border-radius: 8px;
-      width: 250px;
-      padding: 1rem;
-      text-align: center;
-      border: 2px solid #00ff99;
-    }
-    .plan img {
-      width: 64px;
-      height: 64px;
-    }
-    .plan h3 {
-      margin-top: 0.5rem;
-      color: #00ff99;
-    }
-    .plan del {
-      color: #888;
-      font-size: 0.9rem;
-      margin-right: 0.5rem;
-    }
-    .plan ul { list-style: none; padding: 0; }
-    .plan li { padding: 0.3rem 0; }
-    .plan button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      border: none;
-      background: #00ff99;
-      color: #000;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #00ff99;
-      padding-top: 2rem;
-    }
-
-    .faq {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .faq-item {
-      background: #2e2e2e;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-      padding: 1rem;
-      cursor: pointer;
-      position: relative;
-    }
-    .faq-item h4 {
-      margin: 0;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .faq-item p {
-      display: none;
-      margin-top: 1rem;
-    }
-    .faq-item.active p { display: block; }
-    .faq-item .arrow {
-      transition: transform 0.3s;
-    }
-    .faq-item.active .arrow {
-      transform: rotate(180deg);
-    }
-
-    .contact {
-      background: #2e2e2e;
-      padding: 2rem;
-      text-align: center;
-    }
-    .contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 400px;
-      margin: auto;
-    }
-    .contact input, .contact textarea {
-      padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-    .contact button {
-      padding: 0.8rem;
-      background: #00ff99;
-      color: #000;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .about, .team {
-      text-align: center;
-      padding: 2rem;
-    }
 
     footer {
       background: #2c2c2c;
@@ -166,20 +55,6 @@
       margin-top: 2rem;
       color: #aaa;
     }
-
-    @media (max-width: 768px) {
-      .plans {
-        flex-direction: column;
-        align-items: center;
-      }
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-    }
   </style>
 </head>
 <body>
@@ -187,122 +62,22 @@
   <header>
     <h1>ServerPlus</h1>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#plans">Plans</a>
-      <a href="#faq">FAQ</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plans.html">Plans</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Start your Minecraft server journey with us!</h2>
-    <p>Pick your plan and go online in seconds.</p>
-  </section>
-
-  <section class="about" id="about">
-    <h2 class="section-title">About Us</h2>
-    <p>ServerPlus is your one-stop solution for Minecraft server hosting with cracked support, lightning-fast deployment, and low prices. Whether you're playing solo or with friends, we've got a plan for you.</p>
-  </section>
-
-  <section class="plans" id="plans">
-    <div class="plan">
-      <img src="assets/zombie.png" alt="Free Plan">
-      <h3>Free</h3>
-      <ul>
-        <li>10 Players</li>
-        <li>3 Plugins/Mods</li>
-        <li>Cracked Support</li>
-        <li>Limited Resources</li>
-      </ul>
-      <button>Select</button>
-    </div>
-
-    <div class="plan">
-      <img src="assets/skeleton.png" alt="Basic Plan">
-      <h3><del>₹199</del> Basic - ₹99</h3>
-      <ul>
-        <li>50 Players</li>
-        <li>10 Plugins/Mods</li>
-        <li>Cracked Support</li>
-        <li>Increased Resources</li>
-      </ul>
-      <button>Select</button>
-    </div>
-
-    <div class="plan">
-      <img src="assets/blaze.png" alt="Ultra Plan">
-      <h3><del>₹399</del> Ultra - ₹199</h3>
-      <ul>
-        <li>100 Players</li>
-        <li>20 Plugins/Mods</li>
-        <li>Cracked Support</li>
-        <li>High Resources</li>
-      </ul>
-      <button>Select</button>
-    </div>
-
-    <div class="plan">
-      <img src="assets/wither.png" alt="Premium Plan">
-      <h3><del>₹899</del> Premium - ₹499</h3>
-      <ul>
-        <li>Unlimited Players</li>
-        <li>Unlimited Plugins/Mods</li>
-        <li>Cracked Support</li>
-        <li>Max Performance</li>
-      </ul>
-      <button>Select</button>
-    </div>
-  </section>
-
-  <section class="faq" id="faq">
-    <h2 class="section-title">FAQ</h2>
-    <div class="faq-item">
-      <h4>Do you support cracked Minecraft servers? <span class="arrow">&#9660;</span></h4>
-      <p>Yes, all plans come with cracked support so you and your friends can play even without official Minecraft accounts.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Can I upgrade my plan anytime? <span class="arrow">&#9660;</span></h4>
-      <p>Absolutely! You can upgrade at any time by contacting support. Your server and data remain safe during the upgrade.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Is there 24/7 support? <span class="arrow">&#9660;</span></h4>
-      <p>We offer community support via Discord and email. Paid users get priority responses within a few hours.</p>
-    </div>
-  </section>
-
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-    <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
-    <p>Instagram: <a href="https://instagram.com/serverpluse_ig" target="_blank">@serverpluse_ig</a></p>
-    <p>Discord: <a href="https://discord.com/users/serverpluse_dc" target="_blank">@serverpluse_dc</a></p>
+  <section class="hero">
+    <h2>Welcome to ServerPlus!</h2>
+    <p>Your one-stop solution for Minecraft server hosting.</p>
   </section>
 
   <footer>
     &copy; 2025 ServerPlus. All rights reserved.
   </footer>
-
-  <script>
-    // Clear contact form
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      alert("Thank you! We'll be in touch soon.");
-      this.reset();
-    });
-
-    // Toggle FAQ answers
-    document.querySelectorAll(".faq-item").forEach(item => {
-      item.addEventListener("click", () => {
-        item.classList.toggle("active");
-      });
-    });
-  </script>
 
 </body>
 </html>
