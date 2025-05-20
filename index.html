@@ -253,20 +253,58 @@
   </section>
 
   <section class="faq">
-    <h2>FAQs</h2>
-    <div class="faq-item">
-      <h4>Can I upgrade my plan later?</h4>
-      <p>Yes! You can upgrade anytime from your dashboard.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Is cracked Minecraft supported?</h4>
-      <p>Absolutely, all plans support cracked Minecraft servers.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Do you offer backups?</h4>
-      <p>Yes, Premium and Ultra plans include automated backups.</p>
-    </div>
-  </section>
+  <h2>FAQs</h2>
+
+  <div class="faq-item">
+    <h4 class="faq-question">Can I upgrade my plan later?</h4>
+    <p class="faq-answer" style="display:none;">
+      Yes, you can upgrade your plan at any time. Simply log in to your dashboard and choose a higher-tier plan.
+      Your server data will be retained during the upgrade process, and new resources will be applied instantly.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h4 class="faq-question">Is cracked Minecraft supported?</h4>
+    <p class="faq-answer" style="display:none;">
+      Absolutely! All our server plans are compatible with cracked Minecraft clients.
+      You don’t need a premium Minecraft account to join your own server. Just install the server and start playing!
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h4 class="faq-question">Do you offer backups?</h4>
+    <p class="faq-answer" style="display:none;">
+      Yes, we offer automatic daily backups for Ultra and Premium plans.
+      These backups ensure that your server world, configurations, and player data are safe and restorable with just a few clicks.
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h4 class="faq-question">How long does it take for the server to go live?</h4>
+    <p class="faq-answer" style="display:none;">
+      Your server is usually activated within a few seconds after you select a plan.
+      You’ll receive login and connection details instantly, so you can start building your Minecraft world right away!
+    </p>
+  </div>
+
+  <div class="faq-item">
+    <h4 class="faq-question">Can I cancel anytime?</h4>
+    <p class="faq-answer" style="display:none;">
+      Yes, you can cancel your subscription at any point from your account panel. 
+      There are no hidden charges or lock-in periods — you're in control of your server.
+    </p>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll(".faq-question").forEach(q => {
+    q.addEventListener("click", () => {
+      const answer = q.nextElementSibling;
+      answer.style.display = (answer.style.display === "none") ? "block" : "none";
+    });
+  });
+</script>
+
 
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
