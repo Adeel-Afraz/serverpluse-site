@@ -6,96 +6,124 @@
   <title>ServerPluse – Fast & Secure Hosting</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
   <style>
+    :root {
+      --bg-main: #0b0f1a;
+      --bg-accent: #111827;
+      --text-light: #e0f2f1;
+      --highlight: #00f7ff;
+      --accent: #1e293b;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0a0f0a;
-      color: #e0ffe0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-light);
     }
+
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #002d00;
+      background-color: var(--accent);
       padding: 12px 30px;
+      border-bottom: 2px solid var(--highlight);
     }
+
     .logo-container {
       display: flex;
       align-items: center;
     }
+
     .logo-container img {
-      height: 40px;
+      height: 42px;
       cursor: pointer;
     }
+
     .logo-container h1 {
       margin-left: 10px;
-      font-size: 22px;
-      color: #80ff80;
+      font-size: 24px;
+      color: var(--highlight);
     }
+
     nav a {
-      color: #e0ffe0;
+      color: var(--text-light);
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
+
     nav a:hover {
-      color: #00ff66;
+      color: var(--highlight);
     }
+
     .promo-section {
-      background-color: #003300;
+      background-color: #1a2233;
       text-align: center;
       padding: 60px 20px;
     }
+
     .promo-section h2 {
       font-size: 32px;
-      color: #b3ffb3;
+      color: var(--highlight);
     }
+
     .promo-section p {
       font-size: 18px;
       margin: 20px 0;
+      color: #cce7f0;
     }
+
     .promo-section a {
       display: inline-block;
       padding: 12px 25px;
-      background-color: #00cc44;
-      color: #fff;
+      background-color: var(--highlight);
+      color: #000;
       text-decoration: none;
       font-size: 16px;
       border-radius: 4px;
     }
+
     .promo-section a:hover {
-      background-color: #009933;
+      background-color: #00c8cc;
     }
+
     .ad-section {
-      background-color: #001a00;
+      background-color: #101825;
       padding: 40px 20px;
       text-align: center;
+      border-top: 1px solid #1e293b;
     }
+
     .ad-section p {
       margin-bottom: 20px;
-      color: #66ff66;
+      color: #7fdbff;
     }
+
     .ad-placeholder {
       width: 300px;
       height: 250px;
-      background-color: #333;
+      background-color: #2c3e50;
       margin: 0 auto;
-      border: 2px dashed #00cc66;
+      border: 2px dashed #00f7ff;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #999;
+      color: #ccc;
       font-size: 16px;
     }
+
     .section {
       padding: 60px 30px;
     }
+
     .section h2 {
       text-align: center;
       font-size: 28px;
       margin-bottom: 40px;
-      color: #b3ffb3;
+      color: var(--highlight);
     }
+
     .features {
       display: flex;
       justify-content: center;
@@ -104,23 +132,26 @@
       max-width: 1000px;
       margin: 0 auto;
     }
+
     .feature {
-      background-color: #002200;
+      background-color: var(--accent);
       padding: 30px;
       border-radius: 8px;
       text-align: center;
       flex: 1;
       min-width: 280px;
-      color: #ccffcc;
+      color: #e2faff;
     }
+
     .feature img {
       width: 80px;
       height: 80px;
       margin-bottom: 20px;
     }
+
     footer {
-      background-color: #001100;
-      color: #66ff66;
+      background-color: #0a0d14;
+      color: #7fdbff;
       padding: 20px;
       text-align: center;
     }
@@ -147,8 +178,8 @@
 
   <!-- Promo Section -->
   <section class="promo-section">
-    <h2>🎉 Launch Offer!</h2>
-    <p>Get up to <strong>50% OFF</strong> on Ultra and Premium Hosting Plans!</p>
+    <h2>🚀 Launch Offer!</h2>
+    <p>Enjoy <strong>50% OFF</strong> on Ultra and Premium Hosting Plans – Limited Time Only!</p>
     <a href="plans.html">Let's Go</a>
   </section>
 
@@ -162,22 +193,22 @@
 
   <!-- Why Choose Us -->
   <section class="section">
-    <h2>Why Choose Us</h2>
+    <h2>Why Choose ServerPluse?</h2>
     <div class="features">
       <div class="feature">
         <img src="assets/images/fast-server.png" alt="Fast Servers" />
         <h3>Blazing Fast Servers</h3>
-        <p>Experience lightning speed with our advanced hosting infrastructure tailored for high performance websites.</p>
+        <p>State-of-the-art infrastructure delivering ultra-low latency and maximum uptime.</p>
       </div>
       <div class="feature">
         <img src="assets/images/secure.png" alt="Secure Hosting" />
-        <h3>Rock Solid Security</h3>
-        <p>Military-grade security protocols and continuous monitoring to keep your data safe and sound.</p>
+        <h3>Military-grade Security</h3>
+        <p>Protect your data with encrypted storage, firewall protection, and daily backups.</p>
       </div>
       <div class="feature">
         <img src="assets/images/support.png" alt="24/7 Support" />
         <h3>24/7 Expert Support</h3>
-        <p>Friendly support staff available anytime to help you troubleshoot issues or provide technical guidance.</p>
+        <p>Need help? Our engineers are available all day, every day—no downtime, no delay.</p>
       </div>
     </div>
   </section>
