@@ -3,9 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="ServerPlus - Best Minecraft Server Hosting at Affordable Prices." />
+  <meta name="keywords" content="Minecraft, Server Hosting, Affordable Hosting, ServerPlus" />
+  <meta name="author" content="ServerPlus Team" />
   <title>ServerPlus - Minecraft Hosting</title>
-  <meta name="description" content="ServerPlus - Affordable and powerful Minecraft server hosting plans. Start your adventure today!">
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
+
   <style>
     * { box-sizing: border-box; }
     body {
@@ -22,20 +34,20 @@
       align-items: center;
       flex-wrap: wrap;
     }
-    header h1 { margin: 0; color: #00ff99; }
+    header h1 { color: #00ff99; margin: 0; }
     nav a {
       color: #fff;
       margin-left: 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
+    nav a:hover { color: #00ff99; }
+
     .hero {
       text-align: center;
-      padding: 2rem;
+      padding: 3rem 1rem;
     }
-    .hero h2 {
-      font-size: 2rem;
-      color: #00ff99;
-    }
+    .hero h2 { font-size: 2.5rem; color: #00ff99; }
     .plans {
       display: flex;
       justify-content: center;
@@ -59,23 +71,13 @@
       margin-top: 0.5rem;
       color: #00ff99;
     }
-    .plan .old-price {
-      text-decoration: line-through;
+    .plan del {
       color: #888;
       font-size: 0.9rem;
+      margin-right: 0.5rem;
     }
-    .plan .new-price {
-      font-size: 1.2rem;
-      color: #00ff99;
-      font-weight: bold;
-    }
-    .plan ul {
-      list-style: none;
-      padding: 0;
-    }
-    .plan li {
-      padding: 0.3rem 0;
-    }
+    .plan ul { list-style: none; padding: 0; }
+    .plan li { padding: 0.3rem 0; }
     .plan button {
       margin-top: 1rem;
       padding: 0.5rem 1rem;
@@ -86,32 +88,64 @@
       cursor: pointer;
       border-radius: 5px;
     }
+
+    .section-title {
+      text-align: center;
+      color: #00ff99;
+      padding-top: 2rem;
+    }
+
+    .faq {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .faq-item {
+      background: #2e2e2e;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+      padding: 1rem;
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-item h4 {
+      margin: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item p {
+      display: none;
+      margin-top: 1rem;
+    }
+    .faq-item.active p { display: block; }
+    .faq-item .arrow {
+      transition: transform 0.3s;
+    }
+    .faq-item.active .arrow {
+      transform: rotate(180deg);
+    }
+
     .contact {
       background: #2e2e2e;
       padding: 2rem;
       text-align: center;
     }
-    .contact h2 {
-      color: #00ff99;
-    }
-    form {
-      max-width: 500px;
-      margin: auto;
+    .contact form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
+      max-width: 400px;
+      margin: auto;
     }
-    input, textarea {
-      padding: 0.5rem;
-      border-radius: 4px;
+    .contact input, .contact textarea {
+      padding: 0.8rem;
       border: none;
+      border-radius: 5px;
       font-size: 1rem;
     }
-    textarea {
-      resize: vertical;
-    }
     .contact button {
-      padding: 0.6rem;
+      padding: 0.8rem;
       background: #00ff99;
       color: #000;
       font-weight: bold;
@@ -119,30 +153,12 @@
       border-radius: 5px;
       cursor: pointer;
     }
-    .faq {
+
+    .about, .team {
+      text-align: center;
       padding: 2rem;
-      background: #1f1f1f;
     }
-    .faq h2 {
-      color: #00ff99;
-      text-align: center;
-    }
-    .faq-item {
-      margin-bottom: 1rem;
-    }
-    .faq-item h4 {
-      margin: 0;
-      color: #00ff99;
-    }
-    .faq-item p {
-      margin: 0.5rem 0 0;
-    }
-    .ads {
-      text-align: center;
-      padding: 1rem;
-      background: #2a2a2a;
-      margin-top: 1rem;
-    }
+
     footer {
       background: #2c2c2c;
       text-align: center;
@@ -150,48 +166,43 @@
       margin-top: 2rem;
       color: #aaa;
     }
-    @media (max-width: 600px) {
+
+    @media (max-width: 768px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
       header {
         flex-direction: column;
         align-items: flex-start;
       }
       nav {
-        margin-top: 0.5rem;
-      }
-      .plans {
-        flex-direction: column;
-        align-items: center;
+        margin-top: 1rem;
       }
     }
   </style>
-
-  <!-- ✅ Google Analytics (Your real ID included) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-HKMRVD5L1E');
-  </script>
 </head>
-
 <body>
+
   <header>
     <h1>ServerPlus</h1>
     <nav>
-      <a href="#">Home</a>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
       <a href="#plans">Plans</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section class="hero">
+  <section class="hero" id="home">
     <h2>Start your Minecraft server journey with us!</h2>
     <p>Pick your plan and go online in seconds.</p>
   </section>
 
-  <section class="ads">
-    <p> Get up to 50% off on Ultra and Premium Plans this week!</p>
+  <section class="about" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p>ServerPlus is your one-stop solution for Minecraft server hosting with cracked support, lightning-fast deployment, and low prices. Whether you're playing solo or with friends, we've got a plan for you.</p>
   </section>
 
   <section class="plans" id="plans">
@@ -204,201 +215,69 @@
         <li>Cracked Support</li>
         <li>Limited Resources</li>
       </ul>
-      <span class="old-price">₹49</span><br />
-      <span class="new-price">₹0</span>
       <button>Select</button>
     </div>
 
     <div class="plan">
       <img src="assets/skeleton.png" alt="Basic Plan">
-      <h3>Basic</h3>
+      <h3><del>₹199</del> Basic - ₹99</h3>
       <ul>
         <li>50 Players</li>
         <li>10 Plugins/Mods</li>
         <li>Cracked Support</li>
         <li>Increased Resources</li>
       </ul>
-      <span class="old-price">₹149</span><br />
-      <span class="new-price">₹99</span>
       <button>Select</button>
     </div>
 
     <div class="plan">
       <img src="assets/blaze.png" alt="Ultra Plan">
-      <h3>Ultra</h3>
+      <h3><del>₹399</del> Ultra - ₹199</h3>
       <ul>
         <li>100 Players</li>
         <li>20 Plugins/Mods</li>
         <li>Cracked Support</li>
         <li>High Resources</li>
       </ul>
-      <span class="old-price">₹299</span><br />
-      <span class="new-price">₹199</span>
       <button>Select</button>
     </div>
 
     <div class="plan">
       <img src="assets/wither.png" alt="Premium Plan">
-      <h3>Premium</h3>
+      <h3><del>₹899</del> Premium - ₹499</h3>
       <ul>
         <li>Unlimited Players</li>
         <li>Unlimited Plugins/Mods</li>
         <li>Cracked Support</li>
         <li>Max Performance</li>
       </ul>
-      <span class="old-price">₹699</span><br />
-      <span class="new-price">₹499</span>
       <button>Select</button>
     </div>
   </section>
 
   <section class="faq" id="faq">
-  <h2>FAQs</h2>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Can I upgrade my plan later?
-      <span class="arrow">&#9662;</span>
-    </button>
-    <div class="faq-answer">
-      Yes, you can upgrade your plan at any time. Simply log in to your dashboard and choose a higher-tier plan. Your server data remains intact and upgraded instantly.
+    <h2 class="section-title">FAQ</h2>
+    <div class="faq-item">
+      <h4>Do you support cracked Minecraft servers? <span class="arrow">&#9660;</span></h4>
+      <p>Yes, all plans come with cracked support so you and your friends can play even without official Minecraft accounts.</p>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Is cracked Minecraft supported?
-      <span class="arrow">&#9662;</span>
-    </button>
-    <div class="faq-answer">
-      Absolutely! All our servers support cracked Minecraft clients. You don’t need a Mojang account to join — just set it up and start playing.
+    <div class="faq-item">
+      <h4>Can I upgrade my plan anytime? <span class="arrow">&#9660;</span></h4>
+      <p>Absolutely! You can upgrade at any time by contacting support. Your server and data remain safe during the upgrade.</p>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Do you offer backups?
-      <span class="arrow">&#9662;</span>
-    </button>
-    <div class="faq-answer">
-      Yes, automatic daily backups are included with Ultra and Premium plans. You can restore your world and data anytime from the control panel.
+    <div class="faq-item">
+      <h4>Is there 24/7 support? <span class="arrow">&#9660;</span></h4>
+      <p>We offer community support via Discord and email. Paid users get priority responses within a few hours.</p>
     </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      How long does it take for the server to go live?
-      <span class="arrow">&#9662;</span>
-    </button>
-    <div class="faq-answer">
-      Just seconds! After selecting a plan, your server is provisioned and online almost instantly with access details sent to you immediately.
-    </div>
-  </div>
-
-  <div class="faq-item">
-    <button class="faq-question">
-      Can I cancel anytime?
-      <span class="arrow">&#9662;</span>
-    </button>
-    <div class="faq-answer">
-      Yes, you have full control. You can cancel any time via your dashboard. No cancellation fees or hidden clauses.
-    </div>
-  </div>
-</section>
-
-<!-- FAQ CSS (Include in <style> tag) -->
-<style>
-  .faq {
-    padding: 2rem;
-    background: #2e2e2e;
-    border-radius: 8px;
-    margin: 2rem auto;
-    max-width: 800px;
-  }
-
-  .faq h2 {
-    text-align: center;
-    color: #00ff99;
-    margin-bottom: 1.5rem;
-  }
-
-  .faq-item {
-    border-bottom: 1px solid #444;
-  }
-
-  .faq-question {
-    background: none;
-    color: #fff;
-    border: none;
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  .faq-question:hover {
-    background: #3a3a3a;
-  }
-
-  .arrow {
-    transition: transform 0.3s ease;
-  }
-
-  .faq-answer {
-    padding: 0 1rem 1rem 1rem;
-    display: none;
-    color: #ccc;
-    line-height: 1.6;
-    animation: fadeIn 0.3s ease-in-out;
-  }
-
-  .faq-item.active .faq-answer {
-    display: block;
-  }
-
-  .faq-item.active .arrow {
-    transform: rotate(180deg);
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-  }
-</style>
-
-<!-- FAQ Script (Include before </body>) -->
-<script>
-  document.querySelectorAll('.faq-question').forEach(button => {
-    button.addEventListener('click', () => {
-      const faqItem = button.parentElement;
-      faqItem.classList.toggle('active');
-    });
-  });
-</script>
-
-
-<script>
-  document.querySelectorAll(".faq-question").forEach(q => {
-    q.addEventListener("click", () => {
-      const answer = q.nextElementSibling;
-      answer.style.display = (answer.style.display === "none") ? "block" : "none";
-    });
-  });
-</script>
-
+  </section>
 
   <section class="contact" id="contact">
     <h2>Contact Us</h2>
-    <form id="contact-form">
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
-      <input type="email" id="email" name="email" placeholder="Your Email" required />
-      <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
     </form>
     <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/serverpluse_ig" target="_blank">@serverpluse_ig</a></p>
@@ -410,11 +289,20 @@
   </footer>
 
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
+    // Clear contact form
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
       e.preventDefault();
-      alert("Your message has been sent!");
+      alert("Thank you! We'll be in touch soon.");
       this.reset();
     });
+
+    // Toggle FAQ answers
+    document.querySelectorAll(".faq-item").forEach(item => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("active");
+      });
+    });
   </script>
+
 </body>
 </html>
