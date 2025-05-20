@@ -7,22 +7,22 @@
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
   <style>
     :root {
-      --bg-dark: #0d1b16;
-      --bg-accent: #102920;
+      --bg-main: #102920;
       --text-primary: #d7fbe8;
       --highlight: #00e676;
       --subtle-text: #b2dfdb;
+      --border-accent: #204733;
     }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-dark);
+      background-color: var(--bg-main);
       color: var(--text-primary);
     }
 
     header {
-      background-color: var(--bg-accent);
+      background-color: var(--bg-main);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -58,7 +58,7 @@
     }
 
     .promo-section {
-      background-color: #123d2c;
+      background-color: var(--bg-main);
       text-align: center;
       padding: 60px 20px;
     }
@@ -90,10 +90,10 @@
     }
 
     .ad-section {
-      background-color: #0f261d;
+      background-color: var(--bg-main);
       padding: 40px 20px;
       text-align: center;
-      border-top: 1px solid #204733;
+      border-top: 1px solid var(--border-accent);
     }
 
     .ad-section p {
@@ -116,6 +116,7 @@
 
     .section {
       padding: 60px 30px;
+      background-color: var(--bg-main);
     }
 
     .section h2 {
@@ -135,14 +136,14 @@
     }
 
     .feature {
-      background-color: var(--bg-accent);
+      background-color: #143426;
       padding: 30px;
       border-radius: 8px;
       text-align: center;
       flex: 1;
       min-width: 280px;
       color: var(--text-primary);
-      box-shadow: 0 0 10px rgba(0, 230, 118, 0.1);
+      box-shadow: 0 0 10px rgba(0, 230, 118, 0.08);
     }
 
     .feature img {
