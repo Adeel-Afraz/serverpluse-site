@@ -3,29 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="ServerPlus - Best Minecraft Server Hosting at Affordable Prices." />
-  <meta name="keywords" content="Minecraft, Server Hosting, Affordable Hosting, ServerPlus" />
-  <meta name="author" content="ServerPlus Team" />
-  <title>ServerPlus - Home</title>
-  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="ServerPlus offers affordable and reliable Minecraft server hosting plans." />
+  <meta name="keywords" content="Minecraft hosting, free Minecraft server, premium game servers" />
+  <meta name="author" content="ServerPlus" />
+  <meta property="og:title" content="ServerPlus - Minecraft Hosting" />
+  <meta property="og:description" content="Get your Minecraft server online with ServerPlus in seconds." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://adeel-afraz.github.io/serverpluse-site/" />
+  <meta name="theme-color" content="#00ff99" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <title>ServerPlus - Minecraft Hosting</title>
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-HKMRVD5L1E');
   </script>
 
-  <!-- Google AdSense (replace with your actual publisher ID when approved) -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
-  <script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-  </script>
-
   <style>
-    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -38,84 +36,116 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      flex-wrap: wrap;
     }
-    header h1 { color: #00ff99; margin: 0; }
+    header h1 {
+      margin: 0;
+      color: #00ff99;
+    }
     nav a {
       color: #fff;
       margin-left: 1rem;
       text-decoration: none;
-      font-weight: bold;
     }
-    nav a:hover { color: #00ff99; }
-
     .hero {
       text-align: center;
-      padding: 3rem 1rem;
+      padding: 2rem;
     }
-    .hero h2 { font-size: 2.5rem; color: #00ff99; }
-
-    .banner {
-      background: url('assets/minecraft-banner.jpg') center/cover no-repeat;
-      color: #fff;
-      text-align: center;
-      padding: 4rem 1rem;
+    .hero h2 {
+      font-size: 2rem;
+      color: #00ff99;
     }
-    .banner h2 {
-      background: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-    }
-
-    .features {
+    .plans {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 2rem;
       padding: 2rem;
     }
-    .feature {
+    .plan {
       background: #2e2e2e;
-      padding: 1rem;
       border-radius: 8px;
-      width: 300px;
-      text-align: center;
-    }
-    .feature img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1rem;
-    }
-    .feature h3 {
-      color: #00ff99;
-      margin: 0.5rem 0;
-    }
-
-    .ad {
-      background: #2e2e2e;
-      margin: 2rem auto;
+      width: 250px;
       padding: 1rem;
       text-align: center;
+      border: 2px solid #00ff99;
+    }
+    .plan img {
+      width: 64px;
+      height: 64px;
+    }
+    .plan h3 {
+      margin: 0.5rem 0;
+      color: #00ff99;
+    }
+    .price-line {
+      text-decoration: line-through;
+      color: #999;
+      font-size: 0.9rem;
+    }
+    .plan ul {
+      list-style: none;
+      padding: 0;
+    }
+    .plan li {
+      padding: 0.3rem 0;
+    }
+    .plan button {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      border: none;
+      background: #00ff99;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .ads {
+      background: #2e2e2e;
+      padding: 2rem;
+      text-align: center;
+      margin: 2rem 0;
+    }
+    .ads img {
+      width: 90%;
       max-width: 728px;
     }
-
-    .testimonials {
-      background: #2a2a2a;
-      padding: 2rem 1rem;
+    .contact {
+      background: #2e2e2e;
+      padding: 2rem;
       text-align: center;
     }
-    .testimonials h2 {
+    .contact input,
+    .contact textarea {
+      width: 80%;
+      max-width: 400px;
+      margin: 0.5rem auto;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #00ff99;
+      color: #000;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    .faq {
+      background: #1c1c1c;
+      padding: 2rem;
+    }
+    .faq h2 {
       color: #00ff99;
-      margin-bottom: 1rem;
+      text-align: center;
     }
-    .testimonial {
-      font-style: italic;
-      max-width: 600px;
-      margin: 0 auto;
-      color: #ccc;
+    .faq details {
+      margin: 1rem 0;
+      background: #2e2e2e;
+      padding: 1rem;
+      border-radius: 5px;
     }
-
     footer {
       background: #2c2c2c;
       text-align: center;
@@ -123,67 +153,124 @@
       margin-top: 2rem;
       color: #aaa;
     }
+    @media (max-width: 600px) {
+      .plans {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
-
   <header>
     <h1>ServerPlus</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="plans.html">Plans</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+      <a href="#plans">Plans</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Welcome to ServerPlus!</h2>
-    <p>Your one-stop solution for Minecraft server hosting.</p>
+    <h2>Start your Minecraft server journey with us!</h2>
+    <p>Pick your plan and go online in seconds.</p>
   </section>
 
-  <section class="banner">
-    <h2>LIMITED TIME OFFER: 50% OFF ON ULTRA AND PRIMIUM PLANS!</h2>
-  </section>
-
-  <section class="features">
-    <div class="feature">
-      <img src="assets/lightning.png" alt="Fast Servers">
-      <h3>Blazing Fast</h3>
-      <p>Our servers run on cutting-edge hardware for low-latency performance.</p>
+  <section class="plans" id="plans">
+    <div class="plan">
+      <img src="assets/zombie.png" alt="Free Plan">
+      <h3>Free</h3>
+      <ul>
+        <li>10 Players</li>
+        <li>3 Plugins/Mods</li>
+        <li>Cracked Support</li>
+        <li>Limited Resources</li>
+      </ul>
+      <button>Select</button>
     </div>
-    <div class="feature">
-      <img src="assets/security.png" alt="Security">
-      <h3>Secure Hosting</h3>
-      <p>Reliable protection against DDoS and malicious attacks.</p>
+
+    <div class="plan">
+      <img src="assets/skeleton.png" alt="Basic Plan">
+      <h3>Basic <span class="price-line">₹199</span> ₹99</h3>
+      <ul>
+        <li>50 Players</li>
+        <li>10 Plugins/Mods</li>
+        <li>Cracked Support</li>
+        <li>Increased Resources</li>
+      </ul>
+      <button>Select</button>
     </div>
-    <div class="feature">
-      <img src="assets/support.png" alt="Support">
-      <h3>24/7 Support</h3>
-      <p>We're always here to help with your Minecraft server needs.</p>
+
+    <div class="plan">
+      <img src="assets/blaze.png" alt="Ultra Plan">
+      <h3>Ultra <span class="price-line">₹299</span> ₹199</h3>
+      <ul>
+        <li>100 Players</li>
+        <li>20 Plugins/Mods</li>
+        <li>Cracked Support</li>
+        <li>High Resources</li>
+      </ul>
+      <button>Select</button>
+    </div>
+
+    <div class="plan">
+      <img src="assets/wither.png" alt="Premium Plan">
+      <h3>Premium <span class="price-line">₹799</span> ₹499</h3>
+      <ul>
+        <li>Unlimited Players</li>
+        <li>Unlimited Plugins/Mods</li>
+        <li>Cracked Support</li>
+        <li>Max Performance</li>
+      </ul>
+      <button>Select</button>
     </div>
   </section>
 
-  <section class="ad">
-    <!-- Replace with your AdSense code -->
-    <p><strong>Advertisement</strong></p>
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-XXXXXXXXXXXX"
-         data-ad-slot="1234567890"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+  <section class="ads">
+    <h2>Advertisement</h2>
+    <img src="assets/ad-banner.png" alt="Ad Banner" />
   </section>
 
-  <section class="testimonials">
-    <h2>What Our Players Say</h2>
-    <p class="testimonial">"Best hosting ever! Smooth gameplay and amazing support." - GamerX</p>
+  <section class="faq">
+    <h2>FAQs</h2>
+    <details>
+      <summary>Is the Free plan really free?</summary>
+      <p>Yes! No hidden charges.</p>
+    </details>
+    <details>
+      <summary>Can I upgrade later?</summary>
+      <p>Absolutely. Upgrade anytime from your dashboard.</p>
+    </details>
+    <details>
+      <summary>Do you support cracked Minecraft?</summary>
+      <p>Yes, all our plans support cracked Minecraft.</p>
+    </details>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/serverpluse_ig" target="_blank">@serverpluse_ig</a></p>
+    <p>Discord: <a href="https://discord.com/users/serverpluse_dc" target="_blank">@serverpluse_dc</a></p>
+
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
   </section>
 
   <footer>
     &copy; 2025 ServerPlus. All rights reserved.
   </footer>
 
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Message sent! We will contact you soon.');
+      this.reset(); // Clear form
+    });
+  </script>
 </body>
 </html>
