@@ -7,26 +7,26 @@
   <link rel="icon" href="assets/images/favicon.png" type="image/png" />
   <style>
     :root {
-      --bg-main: #0b0f1a;
-      --bg-accent: #111827;
-      --text-light: #e0f2f1;
-      --highlight: #00f7ff;
-      --accent: #1e293b;
+      --bg-dark: #0d1b16;
+      --bg-accent: #102920;
+      --text-primary: #d7fbe8;
+      --highlight: #00e676;
+      --subtle-text: #b2dfdb;
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-main);
-      color: var(--text-light);
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text-primary);
     }
 
     header {
+      background-color: var(--bg-accent);
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      background-color: var(--accent);
-      padding: 12px 30px;
+      align-items: center;
+      padding: 15px 30px;
       border-bottom: 2px solid var(--highlight);
     }
 
@@ -47,7 +47,7 @@
     }
 
     nav a {
-      color: var(--text-light);
+      color: var(--text-primary);
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
@@ -58,7 +58,7 @@
     }
 
     .promo-section {
-      background-color: #1a2233;
+      background-color: #123d2c;
       text-align: center;
       padding: 60px 20px;
     }
@@ -71,41 +71,42 @@
     .promo-section p {
       font-size: 18px;
       margin: 20px 0;
-      color: #cce7f0;
+      color: var(--subtle-text);
     }
 
     .promo-section a {
       display: inline-block;
       padding: 12px 25px;
       background-color: var(--highlight);
-      color: #000;
+      color: #0d1b16;
       text-decoration: none;
+      font-weight: bold;
       font-size: 16px;
       border-radius: 4px;
     }
 
     .promo-section a:hover {
-      background-color: #00c8cc;
+      background-color: #00c853;
     }
 
     .ad-section {
-      background-color: #101825;
+      background-color: #0f261d;
       padding: 40px 20px;
       text-align: center;
-      border-top: 1px solid #1e293b;
+      border-top: 1px solid #204733;
     }
 
     .ad-section p {
       margin-bottom: 20px;
-      color: #7fdbff;
+      color: #80e2b6;
     }
 
     .ad-placeholder {
       width: 300px;
       height: 250px;
-      background-color: #2c3e50;
+      background-color: #224032;
       margin: 0 auto;
-      border: 2px dashed #00f7ff;
+      border: 2px dashed #00e676;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -134,13 +135,14 @@
     }
 
     .feature {
-      background-color: var(--accent);
+      background-color: var(--bg-accent);
       padding: 30px;
       border-radius: 8px;
       text-align: center;
       flex: 1;
       min-width: 280px;
-      color: #e2faff;
+      color: var(--text-primary);
+      box-shadow: 0 0 10px rgba(0, 230, 118, 0.1);
     }
 
     .feature img {
@@ -150,8 +152,8 @@
     }
 
     footer {
-      background-color: #0a0d14;
-      color: #7fdbff;
+      background-color: #08130e;
+      color: #b9f6ca;
       padding: 20px;
       text-align: center;
     }
@@ -179,7 +181,7 @@
   <!-- Promo Section -->
   <section class="promo-section">
     <h2>🚀 Launch Offer!</h2>
-    <p>Enjoy <strong>50% OFF</strong> on Ultra and Premium Hosting Plans – Limited Time Only!</p>
+    <p>Get up to <strong>50% OFF</strong> on Ultra and Premium Hosting Plans!</p>
     <a href="plans.html">Let's Go</a>
   </section>
 
@@ -187,7 +189,7 @@
   <section class="ad-section">
     <p>Advertisement</p>
     <div class="ad-placeholder">
-      AdSense ad will appear here
+      Your AdSense Ad Here
     </div>
   </section>
 
@@ -197,18 +199,18 @@
     <div class="features">
       <div class="feature">
         <img src="assets/images/fast-server.png" alt="Fast Servers" />
-        <h3>Blazing Fast Servers</h3>
-        <p>State-of-the-art infrastructure delivering ultra-low latency and maximum uptime.</p>
+        <h3>Lightning Fast Servers</h3>
+        <p>Experience blazing speed and low latency with our next-gen server architecture.</p>
       </div>
       <div class="feature">
         <img src="assets/images/secure.png" alt="Secure Hosting" />
-        <h3>Military-grade Security</h3>
-        <p>Protect your data with encrypted storage, firewall protection, and daily backups.</p>
+        <h3>Robust Security</h3>
+        <p>Your data is protected with military-grade encryption and 24/7 monitoring.</p>
       </div>
       <div class="feature">
         <img src="assets/images/support.png" alt="24/7 Support" />
-        <h3>24/7 Expert Support</h3>
-        <p>Need help? Our engineers are available all day, every day—no downtime, no delay.</p>
+        <h3>Expert Support</h3>
+        <p>Our support engineers are always on, ensuring seamless operations round the clock.</p>
       </div>
     </div>
   </section>
