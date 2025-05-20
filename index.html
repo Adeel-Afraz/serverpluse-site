@@ -3,54 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ServerPluse – Fast & Secure Hosting</title>
-  <link rel="icon" href="assets/images/favicon.png" type="image/png" />
+  <title>ServerPluse - Fast & Secure Hosting</title>
+  <meta name="description" content="Get ultra-fast and secure hosting with ServerPluse. Launch offer - Up to 50% off on premium plans!">
+  <meta name="keywords" content="Hosting, ServerPluse, Web Hosting, Secure Hosting, Fast Servers">
+  <meta name="author" content="ServerPluse">
+  <link rel="icon" href="assets/images/serverlogo.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
   <style>
     :root {
-      --bg-main: #102920;
-      --text-primary: #d7fbe8;
+      --bg-dark: #0d1b16;
+      --primary: #1db954;
       --highlight: #00e676;
-      --subtle-text: #b2dfdb;
-      --border-accent: #204733;
+      --text: #f0f0f0;
+      --card-bg: #1a2b24;
     }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--bg-main);
-      color: var(--text-primary);
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-dark);
+      color: var(--text);
     }
 
     header {
-      background-color: var(--bg-main);
+      background-color: var(--card-bg);
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      border-bottom: 2px solid var(--highlight);
+      padding: 10px 20px;
     }
 
-    .logo-container {
+    .logo {
       display: flex;
       align-items: center;
-    }
-
-    .logo-container img {
-      height: 42px;
       cursor: pointer;
     }
 
-    .logo-container h1 {
-      margin-left: 10px;
-      font-size: 24px;
-      color: var(--highlight);
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
     }
 
     nav a {
-      color: var(--text-primary);
-      margin-left: 20px;
+      color: var(--text);
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
+      transition: color 0.3s;
     }
 
     nav a:hover {
@@ -58,20 +57,19 @@
     }
 
     .promo-section {
-      background-color: var(--bg-main);
+      background-color: var(--card-bg);
+      margin: 30px;
+      padding: 30px;
       text-align: center;
-      padding: 60px 20px;
+      border-radius: 10px;
     }
 
     .promo-section h2 {
-      font-size: 32px;
-      color: var(--highlight);
+      margin-bottom: 10px;
     }
 
     .promo-section p {
-      font-size: 18px;
-      margin: 20px 0;
-      color: var(--subtle-text);
+      margin-bottom: 20px;
     }
 
     .promo-section a {
@@ -83,92 +81,74 @@
       font-weight: bold;
       font-size: 16px;
       border-radius: 4px;
+      animation: pulse 2.5s infinite;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s;
     }
 
     .promo-section a:hover {
-      background-color: #00c853;
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);
     }
 
-    .ad-section {
-      background-color: var(--bg-main);
-      padding: 40px 20px;
-      text-align: center;
-      border-top: 1px solid var(--border-accent);
-    }
-
-    .ad-section p {
-      margin-bottom: 20px;
-      color: #80e2b6;
-    }
-
-    .ad-placeholder {
-      width: 300px;
-      height: 250px;
-      background-color: #224032;
-      margin: 0 auto;
-      border: 2px dashed #00e676;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ccc;
-      font-size: 16px;
-    }
-
-    .section {
-      padding: 60px 30px;
-      background-color: var(--bg-main);
-    }
-
-    .section h2 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 40px;
-      color: var(--highlight);
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 230, 118, 0.4);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 230, 118, 0.5);
+      }
     }
 
     .features {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      max-width: 1000px;
-      margin: 0 auto;
+      justify-content: space-around;
+      margin: 40px 20px;
+      gap: 20px;
     }
 
     .feature {
-      background-color: #143426;
-      padding: 30px;
-      border-radius: 8px;
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 10px;
+      width: 30%;
       text-align: center;
-      flex: 1;
-      min-width: 280px;
-      color: var(--text-primary);
-      box-shadow: 0 0 10px rgba(0, 230, 118, 0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .feature img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 20px;
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px rgba(0, 230, 118, 0.4);
+    }
+
+    .adsense {
+      background-color: var(--card-bg);
+      margin: 30px 20px;
+      padding: 30px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .adsense p {
+      font-style: italic;
+      color: #ccc;
     }
 
     footer {
-      background-color: #08130e;
-      color: #b9f6ca;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #888;
     }
+
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div class="logo-container">
-      <a href="index.html">
-        <img src="assets/images/logo.png" alt="ServerPluse Logo" />
-      </a>
-      <h1>ServerPluse</h1>
+    <div class="logo" onclick="window.location.href='index.html'">
+      <img src="assets/images/serverlogo.png" alt="Server Logo">
+      <span><strong>ServerPluse</strong></span>
     </div>
     <nav>
       <a href="index.html">Home</a>
@@ -179,47 +159,43 @@
     </nav>
   </header>
 
-  <!-- Promo Section -->
   <section class="promo-section">
     <h2>🚀 Launch Offer!</h2>
-    <p>Get up to <strong>50% OFF</strong> on Ultra and Premium Hosting Plans!</p>
+    <p>Get up to <strong>50% off</strong> on Ultra and Premium Plans</p>
     <a href="plans.html">Let's Go</a>
   </section>
 
-  <!-- AdSense Section -->
-  <section class="ad-section">
-    <p>Advertisement</p>
-    <div class="ad-placeholder">
-      Your AdSense Ad Here
+  <section class="features">
+    <div class="feature">
+      <h3>⚡ Fast Servers</h3>
+      <p>Experience blazing-fast website speeds with our cutting-edge infrastructure.</p>
+    </div>
+    <div class="feature">
+      <h3>🔒 Secure Hosting</h3>
+      <p>Your data is safe with us. Military-grade encryption and backups included.</p>
+    </div>
+    <div class="feature">
+      <h3>📞 24/7 Support</h3>
+      <p>Round-the-clock support to resolve your issues instantly.</p>
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section class="section">
-    <h2>Why Choose ServerPluse?</h2>
-    <div class="features">
-      <div class="feature">
-        <img src="assets/images/fast-server.png" alt="Fast Servers" />
-        <h3>Lightning Fast Servers</h3>
-        <p>Experience blazing speed and low latency with our next-gen server architecture.</p>
-      </div>
-      <div class="feature">
-        <img src="assets/images/secure.png" alt="Secure Hosting" />
-        <h3>Robust Security</h3>
-        <p>Your data is protected with military-grade encryption and 24/7 monitoring.</p>
-      </div>
-      <div class="feature">
-        <img src="assets/images/support.png" alt="24/7 Support" />
-        <h3>Expert Support</h3>
-        <p>Our support engineers are always on, ensuring seamless operations round the clock.</p>
-      </div>
-    </div>
+  <section class="adsense">
+    <!-- Replace with actual AdSense code when ready -->
+    <p>Ad space for monetization - AdSense code will go here.</p>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 ServerPluse. All rights reserved.</p>
+    &copy; 2025 ServerPluse. All rights reserved.
   </footer>
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
 </body>
 </html>
