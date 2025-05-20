@@ -252,49 +252,135 @@
     </div>
   </section>
 
-  <section class="faq">
+  <section class="faq" id="faq">
   <h2>FAQs</h2>
 
   <div class="faq-item">
-    <h4 class="faq-question">Can I upgrade my plan later?</h4>
-    <p class="faq-answer" style="display:none;">
-      Yes, you can upgrade your plan at any time. Simply log in to your dashboard and choose a higher-tier plan.
-      Your server data will be retained during the upgrade process, and new resources will be applied instantly.
-    </p>
+    <button class="faq-question">
+      Can I upgrade my plan later?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      Yes, you can upgrade your plan at any time. Simply log in to your dashboard and choose a higher-tier plan. Your server data remains intact and upgraded instantly.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4 class="faq-question">Is cracked Minecraft supported?</h4>
-    <p class="faq-answer" style="display:none;">
-      Absolutely! All our server plans are compatible with cracked Minecraft clients.
-      You don’t need a premium Minecraft account to join your own server. Just install the server and start playing!
-    </p>
+    <button class="faq-question">
+      Is cracked Minecraft supported?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      Absolutely! All our servers support cracked Minecraft clients. You don’t need a Mojang account to join — just set it up and start playing.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4 class="faq-question">Do you offer backups?</h4>
-    <p class="faq-answer" style="display:none;">
-      Yes, we offer automatic daily backups for Ultra and Premium plans.
-      These backups ensure that your server world, configurations, and player data are safe and restorable with just a few clicks.
-    </p>
+    <button class="faq-question">
+      Do you offer backups?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      Yes, automatic daily backups are included with Ultra and Premium plans. You can restore your world and data anytime from the control panel.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4 class="faq-question">How long does it take for the server to go live?</h4>
-    <p class="faq-answer" style="display:none;">
-      Your server is usually activated within a few seconds after you select a plan.
-      You’ll receive login and connection details instantly, so you can start building your Minecraft world right away!
-    </p>
+    <button class="faq-question">
+      How long does it take for the server to go live?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      Just seconds! After selecting a plan, your server is provisioned and online almost instantly with access details sent to you immediately.
+    </div>
   </div>
 
   <div class="faq-item">
-    <h4 class="faq-question">Can I cancel anytime?</h4>
-    <p class="faq-answer" style="display:none;">
-      Yes, you can cancel your subscription at any point from your account panel. 
-      There are no hidden charges or lock-in periods — you're in control of your server.
-    </p>
+    <button class="faq-question">
+      Can I cancel anytime?
+      <span class="arrow">&#9662;</span>
+    </button>
+    <div class="faq-answer">
+      Yes, you have full control. You can cancel any time via your dashboard. No cancellation fees or hidden clauses.
+    </div>
   </div>
 </section>
+
+<!-- FAQ CSS (Include in <style> tag) -->
+<style>
+  .faq {
+    padding: 2rem;
+    background: #2e2e2e;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    color: #00ff99;
+    margin-bottom: 1.5rem;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid #444;
+  }
+
+  .faq-question {
+    background: none;
+    color: #fff;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .faq-question:hover {
+    background: #3a3a3a;
+  }
+
+  .arrow {
+    transition: transform 0.3s ease;
+  }
+
+  .faq-answer {
+    padding: 0 1rem 1rem 1rem;
+    display: none;
+    color: #ccc;
+    line-height: 1.6;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .faq-item.active .faq-answer {
+    display: block;
+  }
+
+  .faq-item.active .arrow {
+    transform: rotate(180deg);
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+</style>
+
+<!-- FAQ Script (Include before </body>) -->
+<script>
+  document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+      const faqItem = button.parentElement;
+      faqItem.classList.toggle('active');
+    });
+  });
+</script>
+
 
 <script>
   document.querySelectorAll(".faq-question").forEach(q => {
