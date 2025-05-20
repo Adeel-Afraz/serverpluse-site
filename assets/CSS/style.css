@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e1e;
+  color: #fff;
+}
+header {
+  background: #2c2c2c;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  margin: 0;
+  color: #00ff99;
+}
+nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 2rem;
+}
+.hero h2 {
+  font-size: 2rem;
+  color: #00ff99;
+}
+.plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+.plan {
+  background: #2e2e2e;
+  border-radius: 8px;
+  width: 250px;
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid #00ff99;
+}
+.plan img {
+  width: 64px;
+  height: 64px;
+}
+.plan h3 {
+  margin-top: 0.5rem;
+  color: #00ff99;
+}
+.plan ul {
+  list-style: none;
+  padding: 0;
+}
+.plan li {
+  padding: 0.3rem 0;
+}
+.plan button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #00ff99;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.contact {
+  background: #2e2e2e;
+  padding: 2rem;
+  text-align: center;
+}
+.contact h2 {
+  color: #00ff99;
+}
+.contact p {
+  margin: 0.5rem 0;
+}
+footer {
+  background: #2c2c2c;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #aaa;
+}
