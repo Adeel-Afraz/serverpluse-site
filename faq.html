@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Frequently Asked Questions - ServerPlus" />
-  <meta name="keywords" content="ServerPlus FAQ, Minecraft Hosting Help" />
-  <meta name="author" content="ServerPlus Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ - ServerPlus</title>
-  <link rel="icon" href="assets/favicon.ico" />
+  <meta name="description" content="Find answers to common questions about our Minecraft hosting services.">
+  <meta name="keywords" content="ServerPlus FAQ, Minecraft Hosting Questions, Support">
+  <meta name="author" content="ServerPlus">
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
 </head>
 <body>
 
@@ -16,8 +26,8 @@
     <h1>ServerPlus</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
       <a href="plans.html">Plans</a>
+      <a href="about.html">About Us</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -26,37 +36,23 @@
   <main>
     <section class="faq">
       <h2>Frequently Asked Questions</h2>
-
-      <details>
-        <summary>What makes ServerPlus different?</summary>
-        <p>We offer low-latency servers, easy setup, and dedicated support at a fraction of the cost. We also focus heavily on performance and uptime.</p>
-      </details>
-
-      <details>
-        <summary>Can I upgrade my server later?</summary>
-        <p>Yes! You can upgrade your server anytime directly from your dashboard with just one click. No downtime needed.</p>
-      </details>
-
-      <details>
-        <summary>How long does setup take?</summary>
-        <p>Servers are deployed instantly after payment. You’ll get access to your panel and server within minutes.</p>
-      </details>
-
-      <details>
-        <summary>Do you offer backups?</summary>
-        <p>Yes, automatic backups are included in our premium plans. You can also create manual backups anytime.</p>
-      </details>
-
-      <details>
-        <summary>What if I face issues?</summary>
-        <p>Our support team is available via email and live chat. We aim to resolve all queries within a few hours.</p>
-      </details>
-
+      <div class="question">
+        <h3>How do I set up my server?</h3>
+        <p>After purchasing a plan, you'll receive an email with setup instructions. Our intuitive control panel makes it easy to get started.</p>
+      </div>
+      <div class="question">
+        <h3>Can I upgrade my plan later?</h3>
+        <p>Yes, you can upgrade or downgrade your plan at any time through your account dashboard.</p>
+      </div>
+      <div class="question">
+        <h3>Do you offer support for modded servers?</h3>
+        <p>Absolutely! We support various modpacks and can assist with custom setups.</p>
+      </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 ServerPlus. All rights reserved.
+    <p>&copy; 2025 ServerPlus. All rights reserved.</p>
   </footer>
 
 </body>

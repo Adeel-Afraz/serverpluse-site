@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Contact ServerPlus - Reach out to us anytime." />
-  <meta name="keywords" content="ServerPlus Contact, Hosting Support" />
-  <meta name="author" content="ServerPlus Team" />
-  <title>Contact - ServerPlus</title>
-  <link rel="icon" href="assets/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - ServerPlus</title>
+  <meta name="description" content="Get in touch with the ServerPlus team for support or inquiries.">
+  <meta name="keywords" content="Contact ServerPlus, Minecraft Hosting Support, Customer Service">
+  <meta name="author" content="ServerPlus">
+
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
 </head>
 <body>
 
@@ -16,8 +26,8 @@
     <h1>ServerPlus</h1>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
       <a href="plans.html">Plans</a>
+      <a href="about.html">About Us</a>
       <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -26,25 +36,14 @@
   <main>
     <section class="contact">
       <h2>Contact Us</h2>
-      <form id="contactForm" method="POST" data-netlify="true" name="contact">
-        <input type="hidden" name="form-name" value="contact">
-        <label>Name:</label>
-        <input type="text" name="name" required />
+      <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+      <form action="mailto:support@serverplus.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        <input
+::contentReference[oaicite:23]{index=23}
 
-        <label>Email:</label>
-        <input type="email" name="email" required />
-
-        <label>Message:</label>
-        <textarea name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2025 ServerPlus. All rights reserved.
-  </footer>
-
-</body>
-</html>
