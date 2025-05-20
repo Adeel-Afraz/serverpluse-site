@@ -18,6 +18,12 @@
     gtag('config', 'G-HKMRVD5L1E');
   </script>
 
+  <!-- Google AdSense (replace with your actual publisher ID when approved) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" crossorigin="anonymous"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+
   <style>
     * { box-sizing: border-box; }
     body {
@@ -42,11 +48,73 @@
       font-weight: bold;
     }
     nav a:hover { color: #00ff99; }
+
     .hero {
       text-align: center;
       padding: 3rem 1rem;
     }
     .hero h2 { font-size: 2.5rem; color: #00ff99; }
+
+    .banner {
+      background: url('assets/minecraft-banner.jpg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    .banner h2 {
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+    .feature {
+      background: #2e2e2e;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 300px;
+      text-align: center;
+    }
+    .feature img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+    .feature h3 {
+      color: #00ff99;
+      margin: 0.5rem 0;
+    }
+
+    .ad {
+      background: #2e2e2e;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+      max-width: 728px;
+    }
+
+    .testimonials {
+      background: #2a2a2a;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .testimonials h2 {
+      color: #00ff99;
+      margin-bottom: 1rem;
+    }
+    .testimonial {
+      font-style: italic;
+      max-width: 600px;
+      margin: 0 auto;
+      color: #ccc;
+    }
 
     footer {
       background: #2c2c2c;
@@ -73,6 +141,44 @@
   <section class="hero">
     <h2>Welcome to ServerPlus!</h2>
     <p>Your one-stop solution for Minecraft server hosting.</p>
+  </section>
+
+  <section class="banner">
+    <h2>LIMITED TIME OFFER: 50% OFF ON ULTRA PLAN!</h2>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <img src="assets/lightning.png" alt="Fast Servers">
+      <h3>Blazing Fast</h3>
+      <p>Our servers run on cutting-edge hardware for low-latency performance.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/security.png" alt="Security">
+      <h3>Secure Hosting</h3>
+      <p>Reliable protection against DDoS and malicious attacks.</p>
+    </div>
+    <div class="feature">
+      <img src="assets/support.png" alt="Support">
+      <h3>24/7 Support</h3>
+      <p>We're always here to help with your Minecraft server needs.</p>
+    </div>
+  </section>
+
+  <section class="ad">
+    <!-- Replace with your AdSense code -->
+    <p><strong>Advertisement</strong></p>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXX"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Players Say</h2>
+    <p class="testimonial">"Best hosting ever! Smooth gameplay and amazing support." - GamerX</p>
   </section>
 
   <footer>
