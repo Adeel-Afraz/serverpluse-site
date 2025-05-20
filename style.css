@@ -1,0 +1,203 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e0e;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+a {
+  color: #00d9ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #00ff99;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #1a1a1a, #2e2e2e);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #00ffcc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+.hero-banner {
+  max-width: 100%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #141414;
+}
+
+.feature-box {
+  max-width: 300px;
+  text-align: center;
+}
+
+.feature-box img {
+  width: 80px;
+  height: 80px;
+}
+
+.feature-box h3 {
+  margin-top: 15px;
+  color: #00d9ff;
+}
+
+/* Plans Section */
+.plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+  background-color: #101010;
+}
+
+.plan {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px #00ff99aa;
+  text-align: center;
+}
+
+.plan img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.plan h3 {
+  margin-bottom: 10px;
+  color: #00ffcc;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+  font-size: 0.95rem;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00ffcc;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #ffffff;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #00ff99;
+  color: #000;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background-color: #00cc7a;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Ads */
+.ads {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #111;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features, .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
