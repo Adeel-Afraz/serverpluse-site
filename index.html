@@ -9,15 +9,15 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      background-color: #0a0f0a;
+      color: #e0ffe0;
     }
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background-color: #111;
-      color: #fff;
-      padding: 10px 30px;
+      background-color: #002d00;
+      padding: 12px 30px;
     }
     .logo-container {
       display: flex;
@@ -30,24 +30,25 @@
     .logo-container h1 {
       margin-left: 10px;
       font-size: 22px;
+      color: #80ff80;
     }
     nav a {
-      color: #fff;
+      color: #e0ffe0;
       margin-left: 20px;
       text-decoration: none;
       font-weight: bold;
     }
     nav a:hover {
-      color: #f90;
+      color: #00ff66;
     }
     .promo-section {
-      background-color: #f5f5f5;
+      background-color: #003300;
       text-align: center;
       padding: 60px 20px;
     }
     .promo-section h2 {
       font-size: 32px;
-      color: #333;
+      color: #b3ffb3;
     }
     .promo-section p {
       font-size: 18px;
@@ -56,14 +57,35 @@
     .promo-section a {
       display: inline-block;
       padding: 12px 25px;
-      background-color: #ff6600;
+      background-color: #00cc44;
       color: #fff;
       text-decoration: none;
       font-size: 16px;
       border-radius: 4px;
     }
     .promo-section a:hover {
-      background-color: #e65c00;
+      background-color: #009933;
+    }
+    .ad-section {
+      background-color: #001a00;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .ad-section p {
+      margin-bottom: 20px;
+      color: #66ff66;
+    }
+    .ad-placeholder {
+      width: 300px;
+      height: 250px;
+      background-color: #333;
+      margin: 0 auto;
+      border: 2px dashed #00cc66;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 16px;
     }
     .section {
       padding: 60px 30px;
@@ -72,9 +94,9 @@
       text-align: center;
       font-size: 28px;
       margin-bottom: 40px;
-      color: #333;
+      color: #b3ffb3;
     }
-    .features, .testimonials {
+    .features {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
@@ -82,13 +104,14 @@
       max-width: 1000px;
       margin: 0 auto;
     }
-    .feature, .testimonial {
-      background-color: #f2f2f2;
+    .feature {
+      background-color: #002200;
       padding: 30px;
       border-radius: 8px;
       text-align: center;
       flex: 1;
       min-width: 280px;
+      color: #ccffcc;
     }
     .feature img {
       width: 80px;
@@ -96,8 +119,8 @@
       margin-bottom: 20px;
     }
     footer {
-      background-color: #111;
-      color: #fff;
+      background-color: #001100;
+      color: #66ff66;
       padding: 20px;
       text-align: center;
     }
@@ -129,6 +152,14 @@
     <a href="plans.html">Let's Go</a>
   </section>
 
+  <!-- AdSense Section -->
+  <section class="ad-section">
+    <p>Advertisement</p>
+    <div class="ad-placeholder">
+      AdSense ad will appear here
+    </div>
+  </section>
+
   <!-- Why Choose Us -->
   <section class="section">
     <h2>Why Choose Us</h2>
@@ -136,17 +167,17 @@
       <div class="feature">
         <img src="assets/images/fast-server.png" alt="Fast Servers" />
         <h3>Blazing Fast Servers</h3>
-        <p>Experience unmatched speed with our ultra-optimized hosting infrastructure designed for performance.</p>
+        <p>Experience lightning speed with our advanced hosting infrastructure tailored for high performance websites.</p>
       </div>
       <div class="feature">
         <img src="assets/images/secure.png" alt="Secure Hosting" />
         <h3>Rock Solid Security</h3>
-        <p>Enterprise-level protection ensures your data is always safe and secure from threats and attacks.</p>
+        <p>Military-grade security protocols and continuous monitoring to keep your data safe and sound.</p>
       </div>
       <div class="feature">
         <img src="assets/images/support.png" alt="24/7 Support" />
         <h3>24/7 Expert Support</h3>
-        <p>Our support team is always ready to assist you any time of the day with technical help or advice.</p>
+        <p>Friendly support staff available anytime to help you troubleshoot issues or provide technical guidance.</p>
       </div>
     </div>
   </section>
