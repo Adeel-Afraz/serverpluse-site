@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - ServerPlus</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e1e;
+      color: #fff;
+    }
+    header {
+      background: #2c2c2c;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #00ff99;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 1rem;
+      text-decoration: none;
+    }
+    .about {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .about h2 {
+      color: #00ff99;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .about p {
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .team {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+    .team-member {
+      background: #2e2e2e;
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+    }
+    .team-member img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+    }
+    .team-member h4 {
+      color: #00ff99;
+      margin: 0.5rem 0;
+    }
+    footer {
+      background: #2c2c2c;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ServerPlus</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="plans.html">Plans</a>
+      <a href="about.html">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="about">
+    <h2>About ServerPlus</h2>
+    <p><strong>ServerPlus</strong> was founded with one goal in mind: to make Minecraft server hosting fast, affordable, and accessible to everyone. Whether you're a casual player or an experienced creator, our servers are optimized to help you play without lag or limitations.</p>
+
+    <p>We offer a range of server plans suited for different play styles and budgets. With automatic backups, mod/plugin support, and premium hardware, we aim to provide an unbeatable hosting experience at a fraction of the cost.</p>
+
+    <p>We believe in transparency, excellent support, and giving every player the opportunity to host their world their way.</p>
+
+    <h2>Our Team</h2>
+    <div class="team">
+      <div class="team-member">
+        <img src="assets/avatar1.png" alt="Founder">
+        <h4>Adeel Afraz</h4>
+        <p>Founder & Backend Developer</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/avatar2.png" alt="Designer">
+        <h4>Alex Craft</h4>
+        <p>UI/UX & Frontend Lead</p>
+      </div>
+      <div class="team-member">
+        <img src="assets/avatar3.png" alt="Support">
+        <h4>ServerBot</h4>
+        <p>24/7 Discord Support</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 ServerPlus. All rights reserved.
+  </footer>
+</body>
+</html>
