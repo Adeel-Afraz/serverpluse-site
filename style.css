@@ -128,3 +128,56 @@ a {
   color: #aaa;
   font-size: 0.9rem;
 }
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1f2d2d;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0f0;
+}
+
+.contact-form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #e0ffe0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #2c3d3d;
+  color: #fff;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+.success-message {
+  text-align: center;
+  color: lightgreen;
+  margin-top: 15px;
+}
+
+.other-contacts {
+  margin-top: 30px;
+  text-align: center;
+  color: #ccc;
+}
+
+.other-contacts a {
+  color: #78eaff;
+  text-decoration: none;
+}
+
