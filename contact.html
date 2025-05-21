@@ -6,8 +6,8 @@
   <title>Contact Us - ServerPluse</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="assets/images/serverlogo.png" />
-  <meta name="description" content="Contact ServerPluse for support, queries, and feedback. We're here to help you with all your hosting needs." />
-  <meta name="keywords" content="ServerPluse, contact, web hosting support, hosting company, get in touch" />
+  <meta name="description" content="Get in touch with ServerPluse team for any queries or support." />
+  <meta name="keywords" content="contact, ServerPluse support, hosting help" />
   <meta name="author" content="ServerPluse" />
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
@@ -36,52 +36,28 @@
 
   <!-- Contact Section -->
   <section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need support, feel free to get in touch with us!</p>
+    <h2>Contact ServerPluse</h2>
+    <p>We're here to help! Fill out the form or reach out to us directly.</p>
 
-    <form id="contactForm" class="contact-form">
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
+    <div class="contact-wrapper">
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Reach Out</h3>
+        <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/serverpluse" target="_blank">@serverpluse</a></p>
+        <p>Discord: <a href="https://discord.com/invite/serverpluse" target="_blank">ServerPluse Community</a></p>
       </div>
-
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-      </div>
-
-      <button type="submit" class="cta-button">Send Message</button>
-    </form>
-
-    <div id="successMessage" class="success-message" style="display: none;">Thank you! Your message has been sent.</div>
-
-    <!-- Other contact options -->
-    <div class="other-contacts">
-      <h3>Connect with us:</h3>
-      <ul>
-        <li><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></li>
-        <li><strong>Gmail:</strong> <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></li>
-        <li><strong>Discord:</strong> ServerPluse#1234</li>
-      </ul>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2025 ServerPluse. All rights reserved.</p>
   </footer>
-
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e) {
-      e.preventDefault();
-      document.getElementById("successMessage").style.display = "block";
-      this.reset();
-    });
-  </script>
 </body>
 </html>
