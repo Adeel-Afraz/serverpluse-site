@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - ServerPluse</title>
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <meta name="description" content="Contact ServerPluse for support, queries, and feedback. We're here to help you with all your hosting needs." />
+  <meta name="keywords" content="ServerPluse, contact, web hosting support, hosting company, get in touch" />
+  <meta name="author" content="ServerPluse" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKMRVD5L1E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-HKMRVD5L1E');
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-name">
+      <a href="index.html"><img src="assets/images/logo.png" alt="Server Logo" class="logo" /></a>
+      <span class="site-name">ServerPluse</span>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="plans.html">Plans</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need support, feel free to get in touch with us!</p>
+    <form id="contactForm">
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input type="email" id="email" name="email" placeholder="Your Email" required />
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="successMessage" class="success-message" style="display: none;">Thank you! Your message has been sent.</div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 ServerPluse. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      // Show success message
+      document.getElementById("successMessage").style.display = "block";
+      // Clear form
+      this.reset();
+    });
+  </script>
+</body>
+</html>
