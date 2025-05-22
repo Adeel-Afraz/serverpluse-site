@@ -1,31 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Sign In</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Servers - ServerPluse</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="navbar">
-    <a href="index.html" class="logo"><img src="assets/images/serverlogo.png" alt="Logo" />ServerPluse</a>
+    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo" />ServerPluse</a>
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="plans.html">Plans</a>
+      <a href="about.html">About</a>
       <a href="faq.html">FAQ</a>
       <a href="contacts.html">Contact</a>
-      <a href="signin.html">Sign In</a>
+      <a href="servers.html" class="active">Servers</a>
+      <a href="signin.html">Sign Out</a>
     </nav>
   </header>
 
-  <section class="signin-form">
-    <h1>Sign In</h1>
-    <form>
-      <input type="email" placeholder="Email" required><br>
-      <input type="password" placeholder="Password" required><br>
-      <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? <a href="#">Sign Up</a></p>
+  <section class="dashboard">
+    <h1>Your Servers</h1>
+    <div class="server-list">
+
+      <!-- Server Card 1 -->
+      <div class="server-card">
+        <h2>Server #1</h2>
+        <p>Plan: Basic</p>
+        <p>Status: Running</p>
+        <button onclick="location.href='dashboard.html?server=1'">Manage</button>
+      </div>
+
+      <!-- Server Card 2 -->
+      <div class="server-card">
+        <h2>Server #2</h2>
+        <p>Plan: Ultra</p>
+        <p>Status: Stopped</p>
+        <button onclick="location.href='dashboard.html?server=2'">Manage</button>
+      </div>
+
+      <!-- Server Card 3 -->
+      <div class="server-card">
+        <h2>Server #3</h2>
+        <p>Plan: Premium</p>
+        <p>Status: Running</p>
+        <button onclick="location.href='dashboard.html?server=3'">Manage</button>
+      </div>
+
+    </div>
+
+    <div class="adsense">[Ad Block 1]</div>
+    <div class="adsense">[Ad Block 2]</div>
   </section>
 
   <footer>
