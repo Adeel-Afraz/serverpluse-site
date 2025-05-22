@@ -1,180 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - ServerPlus</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="assets/images/logo.png" />
-  <style>
-    body {
-      background-color: #0b1e1e;
-      color: #fff;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: #102d2d;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-
-    .nav-links a {
-      margin-left: 20px;
-      text-decoration: none;
-      color: #b5f0f0;
-      font-weight: bold;
-    }
-
-    .nav-links a:hover {
-      color: #00ffcc;
-    }
-
-    main {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 40px 20px;
-    }
-
-    h1 {
-      margin-bottom: 10px;
-      font-size: 2em;
-      color: #aef;
-    }
-
-    p {
-      margin-bottom: 30px;
-      color: #ccc;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      max-width: 500px;
-      background-color: #133232;
-      padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 15px rgba(0, 255, 150, 0.15);
-    }
-
-    label {
-      margin-bottom: 8px;
-      color: #bff;
-      font-weight: bold;
-    }
-
-    input, textarea {
-      background-color: #0f1f1f;
-      border: 1px solid #33ffcc;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 20px;
-      font-size: 1rem;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 100px;
-    }
-
-    button {
-      background-color: #00cc99;
-      color: #000;
-      border: none;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background-color: #00ffcc;
-    }
-
-    .handles {
-      margin-top: 30px;
-      text-align: center;
-      font-size: 1rem;
-      line-height: 1.8;
-      color: #b0fdfd;
-    }
-
-    .handles a {
-      color: #00ffcc;
-      text-decoration: none;
-    }
-
-    .handles a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #aaa;
-      background-color: #0c1a1a;
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="assets/images/serverlogo.png" alt="ServerPlus Logo" /></a>
-      <h2>ServerPlus</h2>
-    </div>
-    <nav class="nav-links">
+  <header class="navbar">
+    <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="Logo" />ServerPluse</a>
+    <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
+      <a href="about.html">About Us</a>
       <a href="plans.html">Plans</a>
       <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
+      <a href="contacts.html">Contact</a>
+      <a href="signin.html">Sign In</a>
     </nav>
   </header>
 
-  <main>
+  <section class="contact-form">
     <h1>Contact Us</h1>
-    <p>Have a question or need help? Drop us a message below!</p>
     <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Your Name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Your Email" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" placeholder="Type your message..." required></textarea>
-
-      <button type="submit">Send Message</button>
+      <input type="text" placeholder="Your Name" required><br>
+      <input type="email" placeholder="Your Email" required><br>
+      <textarea placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
     </form>
-
-    <div class="handles">
-      <p><strong>Email:</strong> <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/surverpluse" target="_blank">@serverpluse</a></p>
-      <p><strong>Discord:</strong> <a href="https://discord.gg/wTkgUfmj" target="_blank">Join our Discord</a></p>
+    <div class="social-links">
+      <p>Email: <a href="mailto:serverpluse@gmail.com">serverpluse@gmail.com</a></p>
+      <p>Instagram: <a href="https://instagram.com/serverpluse">serverpluse</a></p>
+      <p>Discord: <a href="https://discord.gg/serverpluse">Join our Discord</a></p>
     </div>
-  </main>
+    <div class="adsense">[Ad Here]</div>
+  </section>
 
   <footer>
-    &copy; 2025 ServerPlus. All rights reserved.
+    <p>&copy; 2025 ServerPluse</p>
   </footer>
 </body>
 </html>
