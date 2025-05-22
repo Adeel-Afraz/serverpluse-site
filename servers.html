@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Server Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f1e17;
+      color: #e0ffe0;
+    }
+
+    header {
+      background-color: #08150f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .navbar a {
+      margin-left: 20px;
+      color: #b2ffb2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #10291c;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-right: 2px solid #1f3b2d;
+    }
+
+    .sidebar button {
+      padding: 12px;
+      background-color: #1c3d2b;
+      border: none;
+      color: #d7fdd7;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .sidebar button:hover {
+      background-color: #246644;
+    }
+
+    .content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .ad {
+      background-color: #183727;
+      margin: 20px 0;
+      padding: 15px;
+      border: 1px dashed #3a5a44;
+      text-align: center;
+      color: #94e794;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+  </style>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/images/serverlogo.png" alt="Logo" />
+      <span>ServerPluse</span>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="plans.html">Plans</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contacts.html">Contact</a>
+      <a href="servers.html">Servers</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <button onclick="showSection('serverControl')">Server Control</button>
+      <button onclick="showSection('worldManagement')">World Management</button>
+      <button onclick="showSection('pluginsMods')">Plugins & Mods</button>
+      <button onclick="showSection('gameVersion')">Game Version</button>
+      <button onclick="showSection('backups')">Backups</button>
+      <button onclick="showSection('accessControl')">Access Control</button>
+    </aside>
+
+    <main class="content">
+      <div class="ad">Ad space: Your server could be here!</div>
+
+      <div id="serverControl" class="section active">
+        <h2>Server Control</h2>
+        <button>Start Server</button>
+        <button>Stop Server</button>
+        <button>Restart</button>
+      </div>
+
+      <div id="worldManagement" class="section">
+        <h2>World Management</h2>
+        <button>Set World Size</button>
+        <button>Change Gamemode</button>
+        <button>Set Player Slots</button>
+      </div>
+
+      <div id="pluginsMods" class="section">
+        <h2>Plugins & Mods</h2>
+        <button>Install Plugin</button>
+        <button>Upload Mod</button>
+        <button>Remove Plugin/Mod</button>
+      </div>
+
+      <div id="gameVersion" class="section">
+        <h2>Game Version</h2>
+        <button>Switch to Paper</button>
+        <button>Switch to Spigot</button>
+        <button>Switch to Vanilla</button>
+      </div>
+
+      <div id="backups" class="section">
+        <h2>Backups</h2>
+        <button>Create Backup</button>
+        <button>Restore Backup</button>
+        <button>View Backups</button>
+      </div>
+
+      <div id="accessControl" class="section">
+        <h2>Access Control</h2>
+        <button>Add Moderator</button>
+        <button>Remove Moderator</button>
+        <button>Change Permissions</button>
+      </div>
+
+      <div class="ad">Another ad slot: Promote your mods here!</div>
+    </main>
+  </div>
+</body>
+</html>
